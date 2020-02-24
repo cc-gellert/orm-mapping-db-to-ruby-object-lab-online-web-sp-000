@@ -68,7 +68,6 @@ class Student
     new_row = DB[:conn].execute(sql).flatten
     new_student = self.new_from_db(new_row)
     new_student 
-    binding.pry 
   end 
   
   def self.all_students_in_grade_X(grade)
