@@ -67,6 +67,7 @@ class Student
     
     new_student = DB[:conn].execute(sql)
     self.new_from_db(new_student)
+    binding.pry 
   end 
   
   def self.all_students_in_grade_X(grade)
